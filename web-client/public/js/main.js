@@ -1,4 +1,4 @@
-var botConnection = new BotChat.DirectLine({ secret: 'AuUYCko2LIY.cwA.hfs.WtSZ9NQcuWL4R-zb85PF5G_k686CdujSJwYsnvyexkE' });
+var botConnection = new BotChat.DirectLine({ secret: 'gK1uEv3h91E.cwA.cfs.brX58MrxZPWRft0smq-wrDQlywMbUKJNo_EgiAQE58E' });
 var user = {};
 g_locale = "en";
 function guid() {
@@ -9,7 +9,7 @@ function guid() {
     }
     return s4() +  '_' + Math.random();
   }
-var bot = { id: 'd0c30f9d-1f93-4cc8-ad42-9009d07bacc5' };
+var bot = { id: '7d1bbb86-c243-4ad6-a6c8-c54dd542eb44' };
 function app(locale, location, name) {
     g_locale = locale;
     user.name = name,
