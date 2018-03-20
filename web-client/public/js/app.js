@@ -93,7 +93,7 @@ $(document).ready(function () {
             app(language, location, username);
             sendFromBackChannel("startchat", "startchat")
             $(".chat-window-container").css("height", "calc(100% - 20px - 75px - 20px)");
-            $(".wc-header").html("<span>Welcome to Armstrong</span>");
+            $(".wc-header").html("<span>Welcome to L1 Support</span>");
             $(".wc-upload").remove();
             $("#wc-upload-input").remove();
             $(".close-icon-container").show();
