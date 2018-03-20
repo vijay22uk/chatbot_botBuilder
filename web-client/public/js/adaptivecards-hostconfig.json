@@ -1,0 +1,122 @@
+{
+	"supportsInteractivity": true,
+	"fontFamily": "Segoe UI",
+	"fontSizes": {
+		"small": 12,
+		"default": 14,
+		"medium": 17,
+		"large": 21,
+		"extraLarge": 26
+	},
+	"fontWeights": {
+		"lighter": 200,
+		"default": 400,
+		"bolder": 600
+	},
+	"imageSizes": {
+		"small": 40,
+		"medium": 80,
+		"large": 160
+	},
+	"containerStyles": {
+		"default": {
+			"fontColors": {
+				"default": {
+					"normal": "#333333",
+					"subtle": "#EE333333"
+				},
+				"accent": {
+					"normal": "#2E89FC",
+					"subtle": "#882E89FC"
+				},
+				"good": {
+					"normal": "#54a254",
+					"subtle": "#DD54a254"
+				},
+				"warning": {
+					"normal": "#e69500",
+					"subtle": "#DDe69500"
+				},
+				"attention": {
+					"normal": "#cc3300",
+					"subtle": "#DDcc3300"
+				}
+			},
+			"backgroundColor": "#00000000"
+		},
+		"emphasis": {
+			"fontColors": {
+				"default": {
+					"normal": "#333333",
+					"subtle": "#EE333333"
+				},
+				"accent": {
+					"normal": "#2E89FC",
+					"subtle": "#882E89FC"
+				},
+				"good": {
+					"normal": "#54a254",
+					"subtle": "#DD54a254"
+				},
+				"warning": {
+					"normal": "#e69500",
+					"subtle": "#DDe69500"
+				},
+				"attention": {
+					"normal": "#cc3300",
+					"subtle": "#DDcc3300"
+				}
+			},
+			"backgroundColor": "#08000000"
+		}
+	},
+	"spacing": {
+		"small": 3,
+		"default": 8,
+		"medium": 20,
+		"large": 30,
+		"extraLarge": 40,
+		"padding": 20
+	},
+	"separator": {
+		"lineThickness": 1,
+		"lineColor": "#EEEEEE"
+	},
+	"actions": {
+		"maxActions": 5,
+		"spacing": "Default",
+		"buttonSpacing": 10,
+		"showCard": {
+			"actionMode": "Inline",
+			"inlineTopMargin": 16,
+			"style": "Emphasis"
+		},
+		"preExpandSingleShowCardAction": false,
+		"actionsOrientation": "Horizontal",
+		"actionAlignment": "Stretch"
+	},
+	"adaptiveCard": {
+		"allowCustomStyle": false
+	},
+	"imageSet": {
+		"imageSize": "Medium",
+		"maxImageHeight": "maxImageHeight"
+	},
+	"factSet": {
+		"title": {
+			"size": "Default",
+			"color": "Default",
+			"isSubtle": false,
+			"weight": "Bolder",
+			"warp": true
+		},
+		"value": {
+			"size": "Default",
+			"color": "Default",
+			"isSubtle": false,
+			"weight": "Default",
+			"warp": true
+		},
+		"spacing": 10
+	}
+}

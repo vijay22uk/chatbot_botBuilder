@@ -1,0 +1,31 @@
+{
+  "name": "again",
+  "version": "1.0.2",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "plain": "node app.js",
+    "start": "node app.js",
+    "stop": "forever stopall",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.14.0",
+    "dotenv": "^4.0.0",
+    "forever": "^0.15.3",
+    "mongodb": "^3.0.3",
+    "nodemailer": "^4.6.0",
+    "request": "^2.83.0",
+    "restify": "^6.3.4",
+    "restify-plugins": "^1.6.0",
+    "urlencode": "^1.1.0",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.0",
+    "nodemon": "^1.14.11"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "native-ulpoad-server",
+  "version": "1.0.0",
+  "description": "an express server to log crash report",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "vijay.pandey",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}

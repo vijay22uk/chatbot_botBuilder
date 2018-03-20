@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background: white;
+        }
+
+        table {
+            border-spacing: 5px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table th {
+            color: white;
+            background-color: #0076CE;
+        }
+    </style>
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Armstrong Visitors Log</h1>
+    <table id="log" style="width:100%">        
+        <tr>
+            <th>Username</th>
+            <th>Asked For Help</th>
+            <th>StartTime</th>
+            <th>EndTime</th>
+            <th>PhoneNo</th>
+            <th>Email Address</th>
+            <th>Location</th>
+        </tr>
+    </table>
+    <script>
+        function getHistory(name, limit) {
+            $.ajax({
+                url: "/api/history",
+                method: "GET",
+                success: function (data) {
+                    loadHis(data);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            })
+        }
+        $(document).ready(function () {
+            getHistory();
+        });
+
+        function loadHis(data) {
+            for (var i = 0; i < data.length; i++) {
+                var row = '<tr>' +
+                    '<td>' + data[i].username + '</td>' +
+                    '<td>' + data[i].AskForHelp + '</td>' +
+                    '<td>' + data[i].starttime + '</td>' +
+                    '<td>' + data[i].endtime + '</td>' +
+                    '<td>' + data[i].phoneno + '</td>' +
+                    '<td>' + data[i].email + '</td>' +
+                    '<td>' + data[i].location + '</td>' +                    
+                    '</tr>';
+                $("#log").append(row);
+            }
+        }        
+    </script>
+</body>
+
+</html>
